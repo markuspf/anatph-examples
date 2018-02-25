@@ -1,0 +1,25 @@
+_RWS := rec (
+           isRWS := true,
+          silent := true,
+  generatorOrder := [_g1,_g2,_g3,_g4,_g5,_g6,_g7],
+        inverses := [_g1,_g2,_g3,_g5,_g4,_g7,_g6],
+        ordering := "shortlex",
+       equations := [
+         [_g1*_g3,_g7],
+         [_g1*_g4,_g3],
+         [_g2*_g3,_g5],
+         [_g2*_g6,_g3],
+         [_g3*_g1,_g5],
+         [_g3*_g2,_g7],
+         [_g3*_g4,_g2],
+         [_g3*_g6,_g1],
+         [_g4*_g2,_g3],
+         [_g4*_g3,_g1],
+         [_g4,_g7],
+         [_g6*_g1,_g3],
+         [_g6*_g3,_g2],
+         [_g6,_g5],
+         [_g6*_g3*_g1,_g1*_g2],
+         [_g1*_g2*_g1,_g2*_g3]
+       ]
+);
